@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from backend.routers import casos, etiquetas, documento
+from backend.routers import casos, etiquetas, documento, anotacion
 from backend.database import Base, engine
 
 Base.metadata.create_all(bind=engine)
@@ -9,6 +9,7 @@ app = FastAPI(title="Backend Legal App")
 app.include_router(casos.router)
 app.include_router(etiquetas.router)
 app.include_router(documento.router)
+app.include_router(anotacion.router)
 
 
 @app.get("/")
