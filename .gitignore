@@ -1,0 +1,44 @@
+# Entornos virtuales de Python
+/abogacia_entorno/
+venv/
+.venv/
+
+# Archivos compilados de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de distribución de Python
+/dist/
+/build/
+*.egg-info/
+
+# Flutter/Dart/Pub related
+**/cazos/.dart_tool/
+**/cazos/.flutter-plugins-dependencies
+**/cazos/.pub-cache/
+**/cazos/.pub/
+**/cazos/build/
+**/cazos/coverage/
+
+# Symbolication related
+**/cazos/app.*.symbols
+
+# Obfuscation related
+**/cazos/app.*.map.json
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.history
+.svn/
