@@ -2,30 +2,55 @@
 /abogacia_entorno/
 venv/
 .venv/
+M_abog/
 
 # Archivos compilados de Python
 __pycache__/
 *.py[cod]
 *$py.class
+backend/__pycache__/
+backend/models/__pycache__/
+backend/routers/__pycache__/
+backend/schemas/__pycache__/
+backend/services/__pycache__/
 
 # Archivos de distribución de Python
 /dist/
 /build/
 *.egg-info/
 
-# Flutter/Dart/Pub related
-**/cazos/.dart_tool/
-**/cazos/.flutter-plugins-dependencies
-**/cazos/.pub-cache/
-**/cazos/.pub/
-**/cazos/build/
-**/cazos/coverage/
+# Flutter/Dart/Pub related (Root or Nested)
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+coverage/
 
-# Symbolication related
-**/cazos/app.*.symbols
+# Subfolders
+frontend/.dart_tool/
+frontend/.flutter-plugins
+frontend/.flutter-plugins-dependencies
+frontend/.packages
+frontend/.pub-cache/
+frontend/.pub/
+frontend/build/
+frontend/windows/flutter/ephemeral/
 
-# Obfuscation related
-**/cazos/app.*.map.json
+# Database 
+db.sqlite3
+*.db
+*.sqlite
+
+# Uploads
+uploads/
+/uploads/
+
+# User specific config
+.env
+backend/config.py
 
 # IntelliJ related
 *.iml
@@ -39,6 +64,4 @@ __pycache__/
 *.pyc
 *.swp
 .DS_Store
-.atom/
 .history
-.svn/

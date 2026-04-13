@@ -1,23 +1,20 @@
 from pydantic import BaseModel
+from typing import Optional
+
 
 class CasoBase(BaseModel):
-    titulo : str
-    descripcion : str | None = None
-    tipo: str | None = None
-    estado: str | None = "Activo"
+    titulo: str
+    descripcion: Optional[str] = None
+    tipo: Optional[str] = None
+    estado: Optional[str] = "activo"
+    coleccion_id: Optional[int] = None
+
 
 class CasoCreate(CasoBase):
     pass
 
-from pydantic import BaseModel
 
-class CasoOut(BaseModel):
+class CasoOut(CasoBase):
     id: int
-    titulo: str
-    descripcion: str | None = None
-    tipo: str | None = None
-    estado: str | None = None
 
-    model_config = {
-        "from_attributes": True
-    }
+    model_config = {"from_attributes": True}

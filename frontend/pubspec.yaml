@@ -1,0 +1,38 @@
+name: abogacia_frontend
+description: "Gestor Legal Zotero Style"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # State management
+  provider: ^6.1.1
+  # Core networking
+  dio: ^5.4.1
+  # Auth / Storage
+  shared_preferences: ^2.2.2
+  # File picking / uploads
+  file_picker: ^8.0.0
+  # Editor de texto / Documentos estilo word
+  flutter_quill: ^9.3.8
+  # Visor PDF
+  flutter_pdfview: ^1.3.1
+  # UI extra (Split view estilo Zotero)
+  multi_split_view: ^2.1.0
+  # Iconos
+  cupertino_icons: ^1.0.6
+
+dependency_overrides:
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true

@@ -1,7 +1,6 @@
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import relationship
 from backend.database import Base
-from backend.models.doc_etiqueta import DocumentoEtiqueta
 
 class Etiqueta(Base):
     __tablename__ = "etiquetas"

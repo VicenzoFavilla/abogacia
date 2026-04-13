@@ -1,8 +1,9 @@
-from sqlalchemy import Column, Integer, ForeignKey
+from sqlalchemy import Table, Column, Integer, ForeignKey
 from backend.database import Base
 
-class DocumentoEtiqueta(Base):
-    __tablename__ = "documento_etiqueta"
+documento_etiqueta = Table(
+    "documento_etiqueta",
     Base.metadata,
-    documento_id = Column(Integer, ForeignKey("documentos.id"), primary_key=True)
-    etiqueta_id = Column(Integer, ForeignKey("etiquetas.id"), primary_key=True)
+    Column("documento_id", Integer, ForeignKey("documentos.id"), primary_key=True),
+    Column("etiqueta_id", Integer, ForeignKey("etiquetas.id"), primary_key=True)
+)
